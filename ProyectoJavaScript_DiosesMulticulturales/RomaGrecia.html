@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<HTML lang="es">
+<HEAD>
+<link href="Css.css" rel="stylesheet" type="text/css">
+<TITLE> Roma/Grecia</TITLE>
+<meta charset= "utf-8">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="css2.css">
+<style>
+		body {
+				      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+		background: url('imagenes/fondo_RomaGrecia_principal1.jpg') center center no-repeat fixed;
+		background-size: cover;
+		}
+
+       .container {
+            border: 1px solid #333;
+            padding: 20px;
+            margin-top: 30px;
+			backdrop-filter: blur(20px);
+            width: 1400px;
+            height: 550px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+			border-radius: 5px;
+        }
+        .container nav {
+            background-color: #333;
+            overflow: hidden;
+            width: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;	
+        }
+        .container nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            height: 40px;		
+        }
+        .container nav li {
+            margin: 0 10px;
+        }
+        .container nav li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 5px 10px;
+            text-decoration: none;
+            border: 1px solid transparent;
+            border-radius: 5px;
+        }
+        .container nav li a:hover {
+            background-color: #111;
+            border-color: white;
+        }
+        .content {
+            display: flex;
+            align-items: center;
+        }
+        .content img {
+            margin-left: 20px;
+			margin-right: 20px;
+            max-height: 150px;
+        }
+		  .column-image {
+			flex: 1;
+			margin-right: 90px;
+		  }
+		  .column-text {
+			flex: 2;
+		  }
+		  .container div {
+			display: flex;
+			align-items: center;
+		  }
+    .collapsed {
+      overflow: hidden;
+      height: 80px; /* Altura inicial del texto contraído */
+    }
+    .expanded {
+      height: auto; /* Altura automática cuando el texto se expande */
+    }
+</style>
+</HEAD> 
+
+<body >
+<header>
+<h2 class="logo">Dioses multiculturales</h2>
+<nav class="navigation">
+   <a href="Pagina 1 -principal-.html">Introducción</a>
+   <a href="Mesopotamia.html">Mesopotamia</a>
+   <a href="Egipto.html">Egipto</a>
+   <a href="CN.html">Cultura Nórdica</a>
+    <button class="btnLogin-popup">Login</button>
+</nav>
+</header>
+
+<div class="wrapper">
+<span class="icon-close"><ion-icon name="close-circle"></ion-icon></span>
+<div class="form-box-login">
+<h2>Login</h2>
+<form action="#">
+<div class="input-box">
+  <span class="icon"><ion-icon name="at"></ion-icon></span>
+  <input type="email" required>
+  <label>Email</label>
+</div>
+<div class="input-box">
+  <span class="icon"><ion-icon name="finger-print"></ion-icon></span>
+  <input type="password" required>
+  <label>Contraseña</label>
+</div>
+<div class="remember-forgot">
+  <label><input type="checkbox"> Mantener sesión</label>
+  <a href="#"> Contraseña olvidada?</a>
+</div>
+<button type="submit" class="btn">Entrar</button>
+<div class="login-register">
+<p>No tengo una cuenta<a href="#" class="register-link"> Registrarse</a></p>
+
+</div>
+</form>
+</div>
+
+<div action="/registro" class="form-box-register">
+  <h2>Registro</h2>
+  <form id="registration-form" action="#">
+    <div class="input-box">
+      <span class="icon"><ion-icon name="at"></ion-icon></span>
+      <input id="email-input" type="email" required>
+      <label>Email</label>
+    </div>
+    <div class="input-box">
+      <span class="icon"><ion-icon name="person-add"></ion-icon></span>
+      <input id="username-input" type="text" required>
+      <label>Usuario</label>
+    </div>
+    <div class="input-box">
+      <span class="icon"><ion-icon name="finger-print"></ion-icon></span>
+      <input id="password-input" type="password" required>
+      <label>Contraseña</label>
+    </div>
+    <div class="remember-forgot">
+      <input type="checkbox" class="accept-checkbox">
+      <label>Acepto los términos y condiciones</label>
+    </div>
+    <button type="submit" class="btn">Enviar solicitud de registro</button>
+    <div class="login-register">
+      <p>tengo una cuenta<a href="#" class="login-link"> acceder</a></p>
+    </div>
+  </form>
+</div>
+</div>
+
+
+<main>
+<div class="fondoimg">
+<h2 id="introducción" ><u>La importancia de los dioses en la sociedad Grecolatina</u></h2>
+
+<div><img src="imagenes\helénicos.png" /></div>
+<div id="content1" class="collapsed">
+<article><span><u>La mitología griega integró las dos raíces de su civilización, la prehelénica y la indoeuropea, así como influencias externas.</u>La aportación prehelénica correspondió en gran medida a la cultura minoica de Creta. Su religión se caracterizaba por el culto a la madre tierra, la diosa prehistórica adorada en sus versiones respectivas por todos los pueblos de Oriente Próximo. Encarnaba las fuerzas de la naturaleza, y su poder comprendía tanto la fertilidad como la vida de ultratumba, o sea, la vida y la muerte. La agricultura trajo consigo la aparición de una segunda deidad, relacionada con la diosa madre, que regulaba el ciclo de la vegetación.
+Hacia 1600 a. C. los aqueos, de raza indoeuropea, invadieron la Grecia continental, las islas del Egeo y Asia Menor. Fueron los primeros griegos propiamente dichos, 
+y su religión, la micénica, una síntesis de elementos indoeuropeos y minoicos. Superaron la rivalidad entre su culto al dios indoeuropeo del cielo, Zeus, y el de Hera, 
+la diosa madre venerada en la Argólida (Peloponeso), convirtiendo a esta en hermana y esposa de Zeus. En las tablillas micénicas aparecen ya los nombres de otras deidades 
+importantes, como Atenea, diosa de la sabiduría, y Dioniso, heredero del dios de la vegetación.</span></article>
+</div>
+<button id="toggleButton1" onclick="toggleText('content1', 'toggleButton1')">Leer más</button>
+</br></br>
+  <script>
+    function toggleText(contentId, buttonId) {
+      var content = document.getElementById(contentId);
+      var toggleButton = document.getElementById(buttonId);
+      
+      if (content.classList.contains("collapsed")) {
+        content.classList.remove("collapsed");
+        content.classList.add("expanded");
+        toggleButton.textContent = "Leer menos";
+      } else {
+        content.classList.remove("expanded");
+        content.classList.add("collapsed");
+        toggleButton.textContent = "Leer más";
+      }
+    }
+  </script>
+<div><img  src="imagenes\zeusammon.jpg"></div>
+
+<article><span>Los griegos de Micenas recibieron otras influencias. Sus contactos culturales con los hititas son palpables, por ejemplo, 
+en el culto a Zeus de Labraunda (Asia Menor), cuyo origen era el dios de los vientos hitita. De Chipre tomaron prestada a Afrodita, diosa del amor, 
+que a su vez era una adaptación de la diosa madre cananea, Astarté, cuyo rastro se remonta a Mylitta e Ishtar (asirias), Isis (egipcia) e Inanna (sumeria). 
+De esta “globalización” religiosa en el mundo antiguo fueron conscientes siglos más tarde los propios griegos, que, de hecho, identificaban a los dioses foráneos con los suyos, 
+<u>como al egipcio Amón con Zeus.</u></span></article>
+
+
+<h2>El orden de estos gracias a Homero</h2>
+<div><img src="imagenes\UlisesSirenas.jpg" ></div>
+<article><span>Los poemas homéricos tuvieron un gran valor religioso, ya que suplieron la ausencia de textos sagrados y ordenaron el batiburrillo mitológico grecolatino. 
+Esta confusión se debía a las migraciones y las guerras y al hecho de que en la época micénica cada ciudad y su casa real correspondiente tenían su propia genealogía mítica de dioses y héroes. La Ilíada estableció el canon de la familia de doce dioses que regían el destino del mundo desde su morada en el Olimpo. 
+Aunque este se suele identificar con la montaña homónima, la mitología no es clara al respecto, pues a veces aparece como una región del cielo. Finalmente,Los Romanos, mediante los contactos bélicos y comerciales, acabaron adquiriendo la odisea y adaptando los dioses que integraban las filas Grecas 
+en sus dominios con Nombres que pasarían a ser los utilizados en la actualidad por los planetas del sistema solar.</span></article>
+</div>
+
+
+<div id="importantesG">
+<h2 ><u>Los Dioses del panteón</u></h2>
+    <div class="container">
+        <nav>
+            <ul>
+                <li><a href="#" class="menu-item">Zeus</a></li>
+                <li><a href="#" class="menu-item">Hera</a></li>
+                <li><a href="#" class="menu-item">Poseidón</a></li>
+                <li><a href="#" class="menu-item">Hades</a></li>
+                <li><a href="#" class="menu-item">Deméter</a></li>
+                <li><a href="#" class="menu-item">Atenea</a></li>
+                <li><a href="#" class="menu-item">Artemisa</a></li>
+                <li><a href="#" class="menu-item">Apolo</a></li>
+				<li><a href="#" class="menu-item">Afrodita</a></li>
+				<li><a href="#" class="menu-item">Hefesto</a></li>
+				<li><a href="#" class="menu-item">Ares</a></li>
+				<li><a href="#" class="menu-item">Hermes</a></li>
+				<li><a href="#" class="menu-item">Hestia</a></li>
+				<li><a href="#" class="menu-item">Dionisio</a></li>
+            </ul>
+        </nav>
+		<div>
+		  <img id="image" class="column-image" src="">
+		  <p id="text" class="column-text"></p>
+		</div>
+        <div class="content">
+            <p id="text"></p>
+        </div>
+    </div>
+    <script src="scriptRomaGrecia.js"></script>
+
+
+<h2 ><u>Tabla De Dioses</u></h2>
+<div id="tabla del olimpo">
+<table class="table" id="myTable">
+    <tr>
+        <td ><strong>GRIEGO</strong></td>
+        <td ><strong>ROMANO</strong></td>
+        <td class="carac"><strong>CARACTERÍSTICAS</strong></td>
+        <td  class="repre"><strong>ATRIBUTOS</strong></td>
+    </tr>
+    <tr>
+        <td>ZEUS</td>
+        <td>JÚPITER</td>
+        <td class="carac">Es el dios supremo, gobierna el
+        cielo y los fenómenos atmosféricos.</td>
+        <td class="repre">El águila<br>
+        El rayo<br>
+        El cetro<br>
+        El trono</td>
+    </tr>
+    <tr>
+        <td>HERA</td>
+        <td >JUNO</td>
+        <td class="carac">Esposa de Júpiter, protege el
+        matrimonio.</td>
+        <td class="repre">La diadema<br>
+        El pavo real</td>
+    </tr>
+    <tr>
+        <td>POSEIDÓN</td>
+        <td >NEPTUNO</td>
+        <td class="carac">Dios del mar y de las aguas, también
+        de los terremotos.</td>
+        <td class="repre">El caballo<br>
+        El tridente</td>
+    </tr>
+    <tr>
+        <td>HADES</td>
+        <td >PLUTÓN</td>
+        <td class="carac">Dios de los infiernos y de los
+        muertos.</td>
+        <td class="repre">El ciprés<br>
+        </td>
+    </tr>
+    <tr>
+        <td>DEMÉTER</td>
+        <td >CERES</td>
+        <td class="carac">Diosa de la agricultura.</td>
+        <td class="repre">Las espigas<br>
+        La hoz</td>
+    </tr>
+    <tr>
+        <td>ATENEA</td>
+        <td bgcolor="#EC4B4B">MINERVA</td>
+        <td class="carac">Diosa de la técnica y de la
+        sabiduría.</td>
+        <td class="repre">El casco<br>
+        La lechuza<br>
+        El olivo</td>
+    </tr>
+    <tr>
+        <td>ÁRTEMIS</td>
+        <td bgcolor="#EC4B4B">DIANA</td>
+        <td class="carac">Diosa de la naturaleza y los
+        animales salvajes. También de la caza</td>
+        <td class="repre">El arco y el carcaj.<br>
+        Luna<br>
+        El ciervo</td>
+    </tr>
+    <tr>
+        <td>APOLO</td>
+        <td>APOLO</td>
+        <td class="carac">Dios de la música, la adivinación,
+        la medicina, la luz y el sol.</td>
+        <td class="repre">La lira<br>
+        El arco y las flechas<br>
+        El sol<br>
+        El laurel</td>
+    </tr>
+    <tr>
+        <td>AFRODITA</td>
+        <td>VENUS</td>
+        <td class="carac">Diosa de la belleza femenina, también
+        del sexo y el amor.</td>
+        <td class="repre">La paloma<br>
+        La manzana</td>
+    </tr>
+    <tr>
+        <td>HEFESTO</td>
+        <td>VULCANO</td>
+        <td class="carac">Dios de la técnica, el fuego y los
+        metales.</td>
+        <td class="repre">La fragua<br>
+        El martillo</td>
+    </tr>
+    <tr>
+        <td>ARES</td>
+        <td>MARTE</td>
+        <td class="carac">Dios de la guerra.</td>
+        <td class="repre">El casco<br>
+        Las armas</td>
+    </tr>
+    <tr>
+        <td>HERMES</td>
+        <td>MERCURIO</td>
+        <td class="carac">Dios del comercio, mensajero de los
+        dioses protector de viajeros y ladrones.</td>
+        <td class="repre">Sandalias aladas<br>
+        Sombrero<br>
+        Cadúceo </td>
+    </tr>
+    <tr>
+        <td>HESTIA</td>
+        <td>VESTA</td>
+        <td class="carac">Diosa del hogar.</td>
+        <td class="repre">La antorcha</td>
+    </tr>
+    <tr>
+        <td>DIONISIO</td>
+        <td>BACO</td>
+        <td class="carac">Dios del vino y el desenfreno.</td>
+        <td class="repre">La vid<br>
+        La hiedra<br>
+        El tirso<br>
+        La pantera</td>
+    </tr>
+	
+</table>
+</div>
+</div>
+<script>
+    function getRandomColor() {
+      var letters = '0123456789ABCDEF';
+      var color = '#';
+      for (var i = 0; i < 6; i++) {
+        color += letters[Math.floor(Math.random() * 16)];
+      }
+      return color;
+    }
+
+    function updateFirstRowColors() {
+      var table = document.getElementById('myTable');
+      var firstRow = table.getElementsByTagName('tr')[0];
+      var cells = firstRow.getElementsByTagName('td');
+      for (var i = 0; i < cells.length; i++) {
+        cells[i].style.backgroundColor = getRandomColor();
+      }
+    }
+
+    setInterval(updateFirstRowColors, 2000); // Actualizar cada 2 segundos
+  </script>
+</main>
+	 <script src="script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>

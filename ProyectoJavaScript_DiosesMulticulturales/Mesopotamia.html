@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<HTML lang="es">
+<HEAD>
+<link href="Css.css" rel="stylesheet" type="text/css">
+<TITLE> Mesopotamia</TITLE>
+<meta charset= "utf-8">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="css2.css">
+<style>
+body {
+		background: url('imagenes/fondo_Mesopotamia_principal1.jpg');
+		}
+/*efecto cambio*/
+.page {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  transform: translateY(-50%);
+  font-size: 18px;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.page.active {
+  opacity: 1;
+}
+
+.book {
+  position: relative;
+  margin: 20px auto;
+  padding: 10px;
+  overflow: hidden;
+  text-align: center;
+}
+
+#nextButton {
+  color: white;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  display: block;
+  margin: 10px auto;
+  transition: background-color 0.3s ease-in-out;
+}
+
+#nextButton::after {
+  content: "▶";
+  margin-left: 5px;
+  color: black;
+  transition: color 0.3s ease-in-out;
+}
+
+#nextButton:hover {
+  background-color: black;
+}
+
+#nextButton:hover::after {
+  color: white;
+}
+
+
+
+
+
+
+
+
+       .container {
+            border: 1px solid #333;
+            padding: 20px;
+            margin-top: 30px;
+			backdrop-filter: blur(20px);
+            width: 1400px;
+            height: 550px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+			border-radius: 5px;
+        }
+        .container nav {
+            background-color: #333;
+            overflow: hidden;
+            width: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;	
+        }
+        .container nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            height: 40px;		
+        }
+        .container nav li {
+            margin: 0 10px;
+        }
+        .container nav li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 5px 10px;
+            text-decoration: none;
+            border: 1px solid transparent;
+            border-radius: 5px;
+        }
+        .container nav li a:hover {
+            background-color: #111;
+            border-color: white;
+        }
+        .content {
+            display: flex;
+            align-items: center;
+        }
+        .content img {
+            margin-left: 20px;
+			margin-right: 20px;
+            max-height: 150px;
+        }
+		  .column-image {
+			flex: 1;
+			margin-right: 90px;
+		  }
+		  .column-text {
+			flex: 2;
+		  }
+		  .container div {
+			display: flex;
+			align-items: center;
+		  }
+	.collapsed {
+      overflow: hidden;
+      height: 80px; /* Altura inicial del texto contraído */
+    }
+    .expanded {
+      height: auto; /* Altura automática cuando el texto se expande */
+    }
+
+</style>
+</HEAD> 
+
+<body >
+
+<header>
+<h2 class="logo">Dioses multiculturales</h2>
+<nav class="navigation">
+   <a href="RomaGrecia.html">Roma/Grecia</a>
+   <a href="Pagina 1 -principal-.html">Introducción</a>
+   <a href="Egipto.html">Egipto</a>
+   <a href="CN.html">Cultura Nórdica</a>
+    <button class="btnLogin-popup">Login</button>
+</nav>
+</header>
+
+
+<div class="wrapper">
+<span class="icon-close"><ion-icon name="close-circle"></ion-icon></span>
+<div class="form-box-login">
+<h2>Login</h2>
+<form action="#">
+<div class="input-box">
+  <span class="icon"><ion-icon name="at"></ion-icon></span>
+  <input type="email" required>
+  <label>Email</label>
+</div>
+<div class="input-box">
+  <span class="icon"><ion-icon name="finger-print"></ion-icon></span>
+  <input type="password" required>
+  <label>Contraseña</label>
+</div>
+<div class="remember-forgot">
+  <label><input type="checkbox"> Mantener sesión</label>
+  <a href="#"> Contraseña olvidada?</a>
+</div>
+<button type="submit" class="btn">Entrar</button>
+<div class="login-register">
+<p>No tengo una cuenta<a href="#" class="register-link"> Registrarse</a></p>
+
+</div>
+</form>
+</div>
+
+<div action="/registro" class="form-box-register">
+  <h2>Registro</h2>
+  <form id="registration-form" action="#">
+    <div class="input-box">
+      <span class="icon"><ion-icon name="at"></ion-icon></span>
+      <input id="email-input" type="email" required>
+      <label>Email</label>
+    </div>
+    <div class="input-box">
+      <span class="icon"><ion-icon name="person-add"></ion-icon></span>
+      <input id="username-input" type="text" required>
+      <label>Usuario</label>
+    </div>
+    <div class="input-box">
+      <span class="icon"><ion-icon name="finger-print"></ion-icon></span>
+      <input id="password-input" type="password" required>
+      <label>Contraseña</label>
+    </div>
+    <div class="remember-forgot">
+      <input type="checkbox" class="accept-checkbox">
+      <label>Acepto los términos y condiciones</label>
+    </div>
+    <button type="submit" class="btn">Enviar solicitud de registro</button>
+    <div class="login-register">
+      <p>tengo una cuenta<a href="#" class="login-link"> acceder</a></p>
+    </div>
+  </form>
+</div>
+</div>
+
+<main>
+ <div class="fondoimg">
+<h2  id="introducción"><u>La Mitología Mesopotamica</u></h2>
+ <div id="content1" class="collapsed">
+<article><span>Se usan como nombre colectivo para las mitologías de las civilizaciones mesopotámicas anteriores a la civilización persa: Sumeria, Acadia, Asiria y babilónica.
+Los sumerios practicaron una religión sincretista con multitud de dioses, demonios y espíritus que representaban fuerzas naturales o presencias en el mundo, tal y como lo haría más adelante la civilización griega. En sus creencias establecen que los dioses originalmente crearon a los seres humanos para que estos se convirtieran en sus sirvientes.
+Muchas historias en la religión sumeria son el precedente de historias similares en religiones del Medio Oriente. Por ejemplo, el relato bíblico de la 
+creación del hombre, así como la narrativa del diluvio universal y el arca de Noé. Los dioses sumerios poseen aspectos similares en las religiones acadias, cananeas y 
+de otras culturas de Oriente Próximo. Algunas de las historias y deidades también tienen sus paralelos griegos; por ejemplo, el descenso de Inanna al inframundo (Irkalla) 
+se asemeja a la historia de Perséfone.</span></article>
+</div>
+<button id="toggleButton1" onclick="toggleText('content1', 'toggleButton1')">Leer más</button>
+</br></br>
+<div><img src="imagenes\CosmosMes.jpg" /></div>
+
+<h2>Cosmología Mesopotamica</h2>
+<article><span>El universo apareció por primera vez cuando Tiamat y Apsu, elementos acuosos, concibieron a los primeros dioses Anshar y Kishar, de cuya descendencia provienen el resto de los dioses sumerios.
+La unión de Anu (An) y Ki produjo a Enlil, el señor del viento, quien eventualmente se convirtió en el líder de los dioses. Después, 
+Enlil fue desterrado de Dilmun (el hogar de los dioses) debido a la violación de Ninlil, de la que tuvo un hijo, Sin (dios de la Luna), 
+también conocido como Nannar.</span></article>
+<h2>Mitos Sumerios</h2>
+<article><span>Los mitos sumerios son explicaciones sencillas y de fácil comprensión destinadas a la gente sin mucho conocimiento acerca de la antigua Sumeria y están narrados en textos acadios como el Enuma Elish y el Atrahasis. Tratan cuestiones teológicas, políticas o filosóficas y reflejan aspiraciones e ilusiones expresadas en forma de novelas y poemas.
+La característica general de los mitos es la de situar el personaje, generalmente un hombre, en su entorno habitual, pero sometido a las fuerzas de la naturaleza, la política o la economía. Estas fuerzas pesan sobre su destino, que está marcado por los dioses. Del mito se saca una reflexión, un consejo.
+Los mitos sumerios pueden considerarse como parábolas y se dividen en varios temas:</span></article>
+<div><img src="imagenes\Sumerios.jpg" /></div>
+<script>
+    function toggleText(contentId, buttonId) {
+      var content = document.getElementById(contentId);
+      var toggleButton = document.getElementById(buttonId);
+      
+      if (content.classList.contains("collapsed")) {
+        content.classList.remove("collapsed");
+        content.classList.add("expanded");
+        toggleButton.textContent = "Leer menos";
+      } else {
+        content.classList.remove("expanded");
+        content.classList.add("collapsed");
+        toggleButton.textContent = "Leer más";
+      }
+    }
+  </script>
+<div class="book">
+  <div class="page">Orígenes:Lo físico que les rodea</div>
+  <div class="page">Organización:política,orden moral y grupos sociales</div>
+  <div class="page">dioses con humanos: Contactos entre ellos(entendidos como fuerzas naturales)</div>
+  <div class="page">epopeyas épicas:El héroe viaja y se encuentra con problemas con moraleja</div>
+  <div class="page">El más allá:la muerte</div>
+  <div class="page">dioses:las vidas de los dioses de forma fantasiosa</div>
+</div>
+
+<button id="nextButton"></button>
+
+<script>
+const pages = document.querySelectorAll('.page');
+let currentPage = 0;
+const nextButton = document.getElementById('nextButton');
+
+nextButton.addEventListener('click', () => {
+  currentPage = (currentPage + 1) % pages.length;
+  displayCurrentPage();
+});
+
+function displayCurrentPage() {
+  pages.forEach((page, index) => {
+    if (index === currentPage) {
+      page.classList.add('active');
+    } else {
+      page.classList.remove('active');
+    }
+  });
+}
+
+displayCurrentPage();
+</script>
+</div>
+<h2  id="importantesM"><u>Dioses principales</u></h2>
+
+    <div class="container">
+        <nav>
+            <ul>
+                <li><a href="#" class="menu-item">Anu</a></li>
+                <li><a href="#" class="menu-item">Enlil</a></li>
+                <li><a href="#" class="menu-item">Enki</a></li>
+                <li><a href="#" class="menu-item">Ningirsu</a></li>
+                <li><a href="#" class="menu-item">Ninhursag</a></li>
+                <li><a href="#" class="menu-item">Enbilulu</a></li>
+                <li><a href="#" class="menu-item">Sin</a></li>
+                <li><a href="#" class="menu-item">Shamash</a></li>
+				<li><a href="#" class="menu-item">Ishtar</a></li>
+            </ul>
+        </nav>
+		<div>
+		  <img id="image" class="column-image" src="">
+		  <p id="text" class="column-text"></p>
+		</div>
+        <div class="content">
+            <p id="text"></p>
+        </div>
+    </div>
+    <script src="scriptMesopotamia.js"></script>
+
+
+</main>
+ <script src="script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>

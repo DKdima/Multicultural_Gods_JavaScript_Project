@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<HTML lang="es">
+<HEAD>
+<link href="Css.css" rel="stylesheet" type="text/css">
+<TITLE> pagina 1</TITLE>
+<meta charset= "utf-8">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="css2.css">
+<style>
+body {
+		background: url('imagenes/fondo_dioses.jpg');
+		background-size: cover;
+		}
+.map-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70vh; 
+}
+img:hover{
+transform:scale(1.1); 
+-webkit-transform:scale(1.1);
+transition:all .25s;
+ display: flex;
+
+}
+.collapsed {
+      overflow: hidden;
+      height: 180px; /* Altura inicial del texto contraído */
+    }
+    .expanded {
+      height: auto; /* Altura automática cuando el texto se expande */
+    }
+</style>
+</HEAD>
+
+<body >
+<header>
+<h2 class="logo">Dioses multiculturales</h2>
+<nav class="navigation">
+   <a href="Egipto.html">Egipto</a>
+   <a href="RomaGrecia.html">Roma/Grecia</a>
+   <a href="Mesopotamia.html">Mesopotamia</a>
+   <a href="CN.html">Cultura Nórdica</a>
+    <button class="btnLogin-popup">Login</button>
+</nav>
+</header>
+
+<div class="wrapper">
+<span class="icon-close"><ion-icon name="close-circle"></ion-icon></span>
+<div class="form-box-login">
+<h2>Login</h2>
+<form action="#">
+<div class="input-box">
+  <span class="icon"><ion-icon name="at"></ion-icon></span>
+  <input type="email" required>
+  <label>Email</label>
+</div>
+<div class="input-box">
+  <span class="icon"><ion-icon name="finger-print"></ion-icon></span>
+  <input type="password" required>
+  <label>Contraseña</label>
+</div>
+<div class="remember-forgot">
+  <label><input type="checkbox"> Mantener sesión</label>
+  <a href="#"> Contraseña olvidada?</a>
+</div>
+<button type="submit" class="btn">Entrar</button>
+<div class="login-register">
+<p>No tengo una cuenta<a href="#" class="register-link"> Registrarse</a></p>
+
+</div>
+</form>
+</div>
+
+<div action="/registro" class="form-box-register">
+  <h2>Registro</h2>
+  <form id="registration-form" action="#">
+    <div class="input-box">
+      <span class="icon"><ion-icon name="at"></ion-icon></span>
+      <input id="email-input" type="email" required>
+      <label>Email</label>
+    </div>
+    <div class="input-box">
+      <span class="icon"><ion-icon name="person-add"></ion-icon></span>
+      <input id="username-input" type="text" required>
+      <label>Usuario</label>
+    </div>
+    <div class="input-box">
+      <span class="icon"><ion-icon name="finger-print"></ion-icon></span>
+      <input id="password-input" type="password" required>
+      <label>Contraseña</label>
+    </div>
+    <div class="remember-forgot">
+      <input type="checkbox" class="accept-checkbox">
+      <label>Acepto los términos y condiciones</label>
+    </div>
+    <button type="submit" class="btn">Enviar solicitud de registro</button>
+    <div class="login-register">
+      <p>tengo una cuenta<a href="#" class="login-link"> acceder</a></p>
+    </div>
+  </form>
+</div>
+</div>
+
+
+<main>
+<div class="fondoimg">
+<div ><h2 ><u>Breve introducción al principio de <font >La Religión</font></u><h2></div>
+<span> Los dioses són las figuras más cambaiantes de la historia de la humanidad. Depende de la cultura y época que escojamos estos varían, parcialmente o en su totalidad.</br>
+en esta página haremos un recorrido de todas estas culturas y la evolución de como explicaban de forma mística los sucesos que no entendiamos siglos atras y que atribuiamos a divinidades externas a nuestra razón
+</span>
+<span >se deduce que las prácticas y creencias ancestrales que aún se dan en sociedades africanas, pacíficas, americanas, etc., salvando las modificaciones que sin duda han debido producirse a lo largo del tiempo, hunden sus raíces en las religiones practicadas por sociedades prehistóricas.
+
+Dado el pequeño tamaño de los grupos que conforman estas sociedades preagrícolas, no existe una casta sacerdotal jerárquica que actúe constante y exclusivamente.</span>
+<div><img src="imagenes\imagenchaman1.jpg" ></div></br>
+<div id="content1" class="collapsed">
+<h2>Chamanismo</h2>
+<span>Con el término chamán se designa de forma generalizada a aquellos individuos que de manera temporal y no exclusiva se dedican a las funciones mágico religiosas, de culto y rituales.
+Se trata de individuos reconocidos por la sociedad, que no tienen por qué formar una casta superior, pues cualquiera que se preste puede convertirse en un chamán, siempre que cumpla satisfactoriamente el proceso de aprendizaje y los rituales pertinentes.
+
+Estos ritos de paso eran muy diversos y siempre con alguna nota distintiva del resto.</br> A pesar de no existir sacerdocio ni jerarquía sacerdotal, el chamán era reconocido por el resto de los miembros de la sociedad por sus capacidades de trance, de contacto con la naturaleza y las fuerzas sobrenaturales y su sabiduría, de manera que se convierten en intermediarios entre el hombre y las fuerzas místicas y sobrenaturales.
+
+El sacerdote o chamán tiene la capacidad de entrar en contacto con fuerzas y seres divinos superiores a través de diferentes técnicas rituales que debe conocer (ingesta de psicotrópicos, sueños, ayunos, meditaciones, etc.) que hacen que entre en un estado de trance o alteración de la conciencia gracias al cual se comunica con los espíritus y seres divinos.</br>el chamán tiene otras funciones que trascienden lo meramente religioso, convirtiéndose en los principales sanadores del grupo, puesto que conocen métodos curativos y técnicas de farmacología natural.</span></br></br></br>
+</div>
+<button id="toggleButton1" onclick="toggleText('content1', 'toggleButton1')">Leer más</button>
+</br></br>
+<script>
+    function toggleText(contentId, buttonId) {
+      var content = document.getElementById(contentId);
+      var toggleButton = document.getElementById(buttonId);
+      
+      if (content.classList.contains("collapsed")) {
+        content.classList.remove("collapsed");
+        content.classList.add("expanded");
+        toggleButton.textContent = "Leer menos";
+      } else {
+        content.classList.remove("expanded");
+        content.classList.add("collapsed");
+        toggleButton.textContent = "Leer más";
+      }
+    }
+  </script>
+<div><img src="imagenes\imagenchaman2.jpg" /></div><h2>El animismo, vida de las cosas inertes</h2>
+<span >El animismo, por ejemplo, se refiere a la creencia en que todo ser, animado o inerte, es susceptible de poseer un ente natural intrínseco o ánima, que influye en el sujeto y en su entorno y que puede tener un carácter negativo o benefactor.
+
+De esta manera, todo elemento natural y humano tiene alma, y por tanto, las sociedades están rodeadas de espíritus, buenos y malos, que hay que venerar o ahuyentar.
+
+Cada individuo porta consigo un tótem o nagual, un ser, a veces animal, que le guía en su vida y refleja sus características y personalidad.
+
+El nagual suele ser revelado en sueños en algún momento de la vida del individuo, bien directamente por el individuo en cuestión o bien a través de la intervención de un chamán que visualiza el nagual asignado.
+
+Los chamanes utilizaban fetiches o amuletos con capacidades mágicas y sobrenaturales que les permitían el ejercicio prácticas mágicas o la dirección de rituales sagrados.</br></span>
+
+<article><span > Con el paso del tiempo, y el comienzo de las agrupaciones entre tribus, estos espíritus se van generalizando y convirtiendo en fuerzas comunes y naturales que se interponen o ayudan a los individuos en sus diferentes labores del día a día.</br>
+Con esta introducción al misticismo y la religión, pasamos a introducir las mayores culturas politeístas que han existido hasta el día de hoy: </span></article>
+</div>
+<map  class="img" name="mapa" >
+<area shape="rect" coords="4,5,344,203" href="Mesopotamia.html"/>
+<area shape="rect" coords="350,4,681,205" href="RomaGrecia.html"/>
+<area shape="rect" coords="3,209,346,427" href="CN.html"/>
+<area shape="rect" coords="348,210,683,427" href="Egipto.html"/>
+</map>
+<span class="map-container"><img class="img" src="mapapagina1.png" usemap="#mapa"/></span>
+
+</main>
+	 <script src="script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>

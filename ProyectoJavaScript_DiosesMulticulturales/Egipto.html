@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<HTML lang="es">
+<HEAD>
+<link href="Css.css" rel="stylesheet" type="text/css">
+<TITLE> Egipto</TITLE>
+<meta charset= "utf-8">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="css2.css">
+<style>
+		body {
+		background: url('imagenes/fondo_Egipto_principal1.jpg');
+		}
+        .container {
+            border: 1px solid #333;
+            padding: 20px;
+            margin-top: 30px;
+			backdrop-filter: blur(20px);
+            width: 1400px;
+            height: 550px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+			border-radius: 5px;
+        }
+        .container nav {
+            background-color: #333;
+            overflow: hidden;
+            width: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;	
+        }
+        .container nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            height: 40px;		
+        }
+        .container nav li {
+            margin: 0 10px;
+        }
+        .container nav li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 5px 10px;
+            text-decoration: none;
+            border: 1px solid transparent;
+            border-radius: 5px;
+        }
+        .container nav li a:hover {
+            background-color: #111;
+            border-color: white;
+        }
+        .content {
+            display: flex;
+            align-items: center;
+        }
+        .content img {
+            margin-left: 20px;
+			margin-right: 20px;
+            max-height: 150px;
+        }
+		  .column-image {
+			flex: 1;
+			margin-right: 90px;
+		  }
+		  .column-text {
+			flex: 2;
+		  }
+		  .container div {
+			display: flex;
+			align-items: center;
+		  }
+    .collapsed {
+      overflow: hidden;
+      height: 100px; /* Altura inicial del texto contraído */
+    }
+    .expanded {
+      height: auto; /* Altura automática cuando el texto se expande */
+    }
+</style>
+</HEAD> 
+<body >
+<header>
+<h2 class="logo">Dioses multiculturales</h2>
+<nav class="navigation">
+   <a href="Pagina 1 -principal-.html">Introducción</a>
+   <a href="Mesopotamia.html">Mesopotamia</a>
+   <a href="RomaGrecia.html">Roma/Grecia</a>
+   <a href="CN.html">Cultura Nórdica</a>
+    <button class="btnLogin-popup">Login</button>
+</nav>
+</header>
+
+<div class="wrapper">
+<span class="icon-close"><ion-icon name="close-circle"></ion-icon></span>
+<div action="/login" class="form-box-login">
+<h2>Login</h2>
+<form action="#">
+<div class="input-box">
+  <span class="icon"><ion-icon name="at"></ion-icon></span>
+  <input type="email" required>
+  <label>Email</label>
+</div>
+<div class="input-box">
+  <span class="icon"><ion-icon name="finger-print"></ion-icon></span>
+  <input type="password" required>
+  <label>Contraseña</label>
+</div>
+<div class="remember-forgot">
+  <label><input type="checkbox"> Mantener sesión</label>
+  <a href="#"> Contraseña olvidada?</a>
+</div>
+<button type="submit" class="btn">Entrar</button>
+<div class="login-register">
+<p>No tengo una cuenta<a href="#" class="register-link"> Registrarse</a></p>
+
+</div>
+</form>
+</div>
+
+<div action="/registro" class="form-box-register">
+  <h2>Registro</h2>
+  <form id="registration-form" action="#">
+    <div class="input-box">
+      <span class="icon"><ion-icon name="at"></ion-icon></span>
+      <input id="email-input" type="email" required>
+      <label>Email</label>
+    </div>
+    <div class="input-box">
+      <span class="icon"><ion-icon name="person-add"></ion-icon></span>
+      <input id="username-input" type="text" required>
+      <label>Usuario</label>
+    </div>
+    <div class="input-box">
+      <span class="icon"><ion-icon name="finger-print"></ion-icon></span>
+      <input id="password-input" type="password" required>
+      <label>Contraseña</label>
+    </div>
+    <div class="remember-forgot">
+      <input type="checkbox" class="accept-checkbox">
+      <label>Acepto los términos y condiciones</label>
+    </div>
+    <button type="submit" class="btn">Enviar solicitud de registro</button>
+    <div class="login-register">
+      <p>tengo una cuenta<a href="#" class="login-link"> acceder</a></p>
+    </div>
+  </form>
+</div>
+</div>
+
+
+
+<main>
+<div class="fondoimg">
+  <h1 id="title1">Los Egipcios y sus dioses</h1>
+  <br/>
+  <div><img src="imagenes\Egipcios.jpg" /></div>
+  <div id="content1" class="collapsed">
+    <p>
+      A excepción del período de Amarna, en el que el faraón Akenatón decretó como único Dios a Atón,
+      los egipcios fueron politeístas, lo que quiere decir que adoraban a distintos dioses a los que
+      veneraban con diversos propósitos. Sin embargo, a lo largo de la basta historia de esta civilización
+      antigua, distintos dioses estuvieron a la cabeza como los más importantes, siendo siempre el faraón
+      el representante de la deidad del cielo en la tierra, por lo que era visto por el pueblo como un ser
+      de luz especial y no solo como un gobernante.
+    </p>
+    <p>
+      La relación de los egipcios con sus dioses era muy estrecha, en ellos encontraban la explicación a
+      los sucesos naturales, a los giros que sus propias vidas daban, a diversos aspectos relacionados con
+      el alma y la naturaleza humana y a muchas de las cosas que ocurrían a su alrededor, por ello los
+      veneraban en santuarios y templos no oficiales, ya que en los oficiales solo podían entrar los
+      sacerdotes, les rezaban pidiendo que intercedieran por ellos y realizaban diversos tipos de rituales
+      para acercarse a sus deidades.
+    </p>
+    <p>
+      Aunque hoy solo conozcamos algunos nombres, diversos arqueólogos y egiptólogos coinciden en que
+      mientras duró esta civilización se veneraron a más de 1.400 figuras, al menos esa es la información
+      que se ha podido recavar a través de los textos antiguos. Durante los más de 3.000 años que duró
+      esta civilización, distintas deidades estuvieron a la cabeza, en base a eso hoy podemos destacar
+      un listado con los principales dioses egipcios.
+    </p>
+  </div>
+  <button id="toggleButton1" onclick="toggleText('content1', 'toggleButton1')">Leer Más</button>
+  <h1 id="title2">El antiguo Egipto</h1>
+   <br/>
+  <div><img src="imagenes\Egipcios2.jpg" /></div>
+  <div id="content2" class="collapsed">
+    <p>
+      El área del Antiguo Egipto ha variado a lo largo de los siglos, pero en general se acepta que abarcaba desde el delta del Nilo en el norte, hasta Elefantina, en la primera catarata del Nilo, en el sur. Además controlaba el desierto oriental, la línea costera del mar Rojo, la península del Sinaí, y un gran territorio occidental dominando los dispersos oasis. Históricamente, 
+      estaba formado por el Alto y el Bajo Egipto, al sur y al norte respectivamente, que precedieron a la creación de un estado unificado. En su período de mayor expansión controló los reinos amorreos de Palestina y el norte de Siria, llegando hasta el Éufrates medio, y las jefaturas nubias del Sudán, 
+      hasta el Jebel Barkal, en la cuarta catarata del Nilo. Ejerció una importante influencia cultural entre los pueblos vecinos, e incluso en regiones tan alejadas como Chipre, 
+      la costa de Anatolia y la península helénica.
+    </p>
+  </div>
+  <button id="toggleButton2" onclick="toggleText('content2', 'toggleButton2')">Leer más</button>
+  <h1 id="title3">La vida después de la muerte</h1>
+   <br/>
+	<div><img src="imagenes\Egipcios3.jpg" /></div>
+  <div id="content3" class="collapsed">
+    <p>
+      Creían que después de la muerte, el ka (doble en forma de espíritu) se dividía en ba (alma) y akh (espíritu). El ba vivía en la tumba del difunto y era libre de ir y venir a voluntad. 
+      El akh se dirigía directamente al inframundo donde seguía su juicio. El gran dios del inframundo Osiris se encargaba de juzgar el espíritu del difunto. Anubis colocaba el corazón del difunto en un lado de su balanza y Ma'at, la diosa de la verdad y la justicia, ponía su pluma de la verdad en el otro lado. Si el corazón y la pluma pesaban lo mismo, el akh (espíritu) se iba al gran reino en donde los buenos espíritus se mezclaban con los dioses en una vida de paz y armonía. 
+      Si no era así el difunto sufriría una eternidad de castigo. Además los egipcios creían que todo difunto debía tener una casa en su otra vida, 
+      era por esto que les construían pirámides e hipogeos a los cadáveres. También como creían que la segunda vida era casi igual a la primera y uno seguía haciendo lo mismo que en la primera, 
+      les dejaban en las tumbas sus joyas y alhajas, ropas, alimentos y juegos. El otro temor de los egipcios (además del juicio de sus almas) era que alguien saqueara la casa de su espíritu. 
+      Si su tumba era saqueada o su cadáver destruido, el ba se quedaba sin hogar y tanto este como el akh experimentarían una segunda muerte mucho peor.
+    </p>
+  </div>
+  
+  
+  <button id="toggleButton3" onclick="toggleText('content3', 'toggleButton3')">Leer más</button>
+  </div>
+  <script>
+    function toggleText(contentId, buttonId) {
+      var content = document.getElementById(contentId);
+      var toggleButton = document.getElementById(buttonId);
+      
+      if (content.classList.contains("collapsed")) {
+        content.classList.remove("collapsed");
+        content.classList.add("expanded");
+        toggleButton.textContent = "Leer menos";
+      } else {
+        content.classList.remove("expanded");
+        content.classList.add("collapsed");
+        toggleButton.textContent = "Leer más";
+      }
+    }
+  </script>
+
+    <div class="container">
+	<h2 id="importantesE"><u>Principales dioses Egipcios</u></h2>
+        <nav>
+            <ul>
+                <li><a href="#" class="menu-item">Ra</a></li>
+                <li><a href="#" class="menu-item">Amon</a></li>
+                <li><a href="#" class="menu-item">Osiris</a></li>
+                <li><a href="#" class="menu-item">Isis</a></li>
+                <li><a href="#" class="menu-item">Horus</a></li>
+                <li><a href="#" class="menu-item">Anubis</a></li>
+                <li><a href="#" class="menu-item">Seth</a></li>
+                <li><a href="#" class="menu-item">Hator</a></li>
+            </ul>
+        </nav>
+		<div>
+		  <img id="image" class="column-image" src="">
+		  <p id="text" class="column-text"></p>
+		</div>
+        <div class="content">
+            <p id="text"></p>
+        </div>
+    </div>
+	
+    <script src="scriptEgipto.js"></script>
+    <script src="script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="server.js"></script>
+</main>
+
+
+</body>
+</html>

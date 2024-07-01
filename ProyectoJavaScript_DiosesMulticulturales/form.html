@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<HTML lang="es">
+<HEAD>
+<link href="Css.css" rel="stylesheet" type="text/css">
+<TITLE> form</TITLE>
+<meta charset= "utf-8">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="css2.css">
+<style>
+*{color:black;}
+	body {
+		background: url('imagenes/fondo_dioses.jpg');
+		}
+  main form {
+      width: 350px;
+      padding: 16px;
+      border-radius: 10px;
+      margin: auto;
+      background-color: #ccc;
+    }
+
+    main form label {
+      width: 72px;
+      font-weight: bold;
+      display: inline-block;
+      font-size: 20px;
+    }
+
+    main form input[type="text"],
+    main form input[type="submit"] {
+      width: 100%;
+      padding: 8px 16px;
+      margin-top: 32px;
+      border: 1px solid #000;
+      border-radius: 5px;
+      display: block;
+      color: #fff;
+      background-color: #000;
+    }
+
+    main textarea {
+      width: 100%;
+      height: 100px;
+      border: 1px solid #f6f6f6;
+      border-radius: 3px;
+      background-color: #f6f6f6;
+      margin: 8px 0;
+      resize: none;
+      display: block;
+    }
+
+    main select {
+      width: 100%;
+    }
+</style>
+</HEAD> 
+<body>
+ <header>
+<h2 class="logo">Dioses multiculturales</h2>
+<nav class="navigation">
+   <a href="Pagina 1 -principal-.html">Introducción</a>
+   <a href="Mesopotamia.html">Mesopotamia</a>
+   <a href="RomaGrecia.html">Roma/Grecia</a>
+   <a href="CN.html">Cultura Nórdica</a>
+    <button class="btnLogin-popup">Login</button>
+</nav>
+</header>
+
+
+
+<div class="wrapper">
+<span class="icon-close"><ion-icon name="close-circle"></ion-icon></span>
+<div action="/login" class="form-box-login">
+<h2>Login</h2>
+<form action="#">
+<div class="input-box">
+  <span class="icon"><ion-icon name="at"></ion-icon></span>
+  <input type="email" required>
+  <label>Email</label>
+</div>
+<div class="input-box">
+  <span class="icon"><ion-icon name="finger-print"></ion-icon></span>
+  <input type="password" required>
+  <label>Contraseña</label>
+</div>
+<div class="remember-forgot">
+  <label><input type="checkbox"> Mantener sesión</label>
+  <a href="#"> Contraseña olvidada?</a>
+</div>
+<button type="submit" class="btn">Entrar</button>
+<div class="login-register">
+<p>No tengo una cuenta<a href="#" class="register-link"> Registrarse</a></p>
+
+</div>
+</form>
+</div>
+
+<div action="/registro" class="form-box-register">
+  <h2>Registro</h2>
+  <form id="registration-form" action="#">
+    <div class="input-box">
+      <span class="icon"><ion-icon name="at"></ion-icon></span>
+      <input id="email-input" type="email" required>
+      <label>Email</label>
+    </div>
+    <div class="input-box">
+      <span class="icon"><ion-icon name="person-add"></ion-icon></span>
+      <input id="username-input" type="text" required>
+      <label>Usuario</label>
+    </div>
+    <div class="input-box">
+      <span class="icon"><ion-icon name="finger-print"></ion-icon></span>
+      <input id="password-input" type="password" required>
+      <label>Contraseña</label>
+    </div>
+    <div class="remember-forgot">
+      <input type="checkbox" class="accept-checkbox">
+      <label>Acepto los términos y condiciones</label>
+    </div>
+    <button type="submit" class="btn">Enviar solicitud de registro</button>
+    <div class="login-register">
+      <p>tengo una cuenta<a href="#" class="login-link"> acceder</a></p>
+    </div>
+  </form>
+</div>
+</div>
+
+
+  <main>
+    <form action="mailto:diosantiguos@gmail.com" method="post" enctype="text/plain" name="formDatosPersonales">
+      <div>
+        <h3>Introduzca el problema que quiere notificar</h3>
+        <select multiple name="problema" id="lang2" size="3">
+          <option>Información incorrecta</option>
+          <option>copyright</option>
+          <option>palabras ofensivas utilizadas en algúno de los apartados</option>
+          <option>Problemas al acceder a la página</option>
+          <option>fallo en la visualización de alguna imagen</option>
+          <option>otros</option>
+        </select>
+        <br/>
+      </div>
+      <div>
+        <h3>Especifique su problema</h3>
+      </div>
+      <textarea name="varias_lineas" cols="50" rows="10">escriba aquí</textarea>
+      <br/><br/>
+      <input type="reset" value="borrar datos">
+      <input type="submit" value="enviar datos">
+    </form>
+	<script src="script.js"></script>
+	    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="server.js"></script>
+  </main>
+</body>
+</html>
